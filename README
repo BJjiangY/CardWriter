@@ -4,3 +4,17 @@
 ### 主要功能
 
 > 使用NFC读取 IC、ID卡 的ID的byte数组的十六进制大写字符串；
+
+
+注意别忘了加入一下内容
+
+
+```
+    <!--NFC-->
+    <uses-permission android:name="android.permission.NFC"/>
+    <!-- 要求当前设备必须要有NFC芯片 -->
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true"/>
+
+```
